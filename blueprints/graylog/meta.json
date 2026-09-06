@@ -3,7 +3,7 @@
   "name": "Graylog",
   "version": "7.1.9",
   "description": "Graylog Open collects, indexes, and searches logs, with dashboards and alerts. Includes MongoDB and OpenSearch.",
-  "logo": "graylog.svg",
+  "logo": "graylog.png",
   "links": {
     "github": "https://github.com/Graylog2/graylog2-server",
     "website": "https://graylog.org/",
