@@ -11,10 +11,11 @@ Tested on 2026-09-06 through Dokploy on Linux x86-64 with Docker Engine 29.1.3, 
 - Confirmed unauthenticated ingestion returned HTTP 401.
 - Retrieved the test log and trace through HyperDX's authenticated search API.
 - Stopped and started the stack through Dokploy. Login, sources, and log and trace searches still worked. Confirmed the test metric value remained in ClickHouse.
+- The instance owner tested the web interface and confirmed it works.
 
 The four containers used approximately 0.9 GiB during this small test. This does not replace the upstream recommendation of at least 4 GiB of available memory, and is not a production sizing benchmark.
 
-Browser rendering, session replay ingestion, and public OTLP/gRPC exposure have not been tested. No upstream PR or hosted preview has been created.
+Session replay ingestion and public OTLP/gRPC exposure have not been tested.
 
 ## Repeat the ingestion check
 
