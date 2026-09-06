@@ -14,10 +14,11 @@ Tested on 2026-09-06 using Dokploy on Linux x86-64, Docker Engine 29.1.3, and th
 - Created a global GELF UDP input on port 12201 through `/api/system/inputs`.
 - Sent a GELF message to that input over the private container network and retrieved it through Graylog's authenticated search API.
 - Stopped and started the stack through Dokploy. The message remained searchable, the input remained configured, and Graylog retained its node ID.
+- The instance owner tested the web interface and confirmed it works.
 
 The three containers used approximately 2 GiB of RAM during this small test. This is not a throughput or production sizing benchmark.
 
-Browser rendering and public TCP/UDP port mappings were not tested. The default template publishes no ingestion ports.
+Public TCP/UDP port mappings were not tested. The default template publishes no ingestion ports.
 
 ## Repeat the ingestion check
 
