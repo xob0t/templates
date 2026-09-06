@@ -15,6 +15,7 @@ Tested on 2026-09-06 using Dokploy on Linux x86-64, Docker Engine 29.1.3, and th
 - Sent a GELF message to that input over the private container network and retrieved it through Graylog's authenticated search API.
 - Stopped and started the stack through Dokploy. The message remained searchable, the input remained configured, and Graylog retained its node ID.
 - The instance owner tested the web interface and confirmed it works.
+- Verified OpenSearch's effective `action.auto_create_index` setting is `false`. Ingested and searched a message, manually rotated the default index set from `graylog_0` to `graylog_1`, then ingested and found a second message in the new write index.
 
 The three containers used approximately 2 GiB of RAM during this small test. This is not a throughput or production sizing benchmark.
 
